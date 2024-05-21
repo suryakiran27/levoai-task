@@ -1,0 +1,171 @@
+body {
+  margin: 0px;
+}
+.loader{
+  text-align: center;
+  margin-top: 10%;
+}
+.header {
+  height: 40px;
+  width: 100%;
+  background: #9eadba;
+}
+h3 {
+  margin-left: 2em;
+}
+
+.orgConatainer {
+  display: grid;
+  justify-content: center;
+  h4 {
+    color: #730fc3;
+    font-size: 1.5em;
+    margin: 0px;
+  }
+  p {
+    color: #bd34d1;
+  }
+  .orgHeader {
+    text-align: center;
+  }
+  .orgList {
+    display: grid;
+    gap: 1em;
+    .orgItem {
+      display: grid;
+      grid-template-columns: 0.4fr 1fr;
+      align-items: center;
+      border: 2px solid #9a9a9a;
+      width: 100%;
+      background: #ced8e0;
+      cursor: pointer;
+      text-align: center;
+
+      .orgImg {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+      }
+      .orgName p {
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: row;
+  row-gap: 1em;
+  .sideBar {
+    width: 15%;
+    height: 100vh;
+    background-color: #f2f5f7;
+    .sidebarHeader {
+      text-align: center;
+      padding: 0.5em;
+      .headerName {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    }
+    .menuList {
+      padding: 10px;
+      .menuItem {
+        cursor: pointer;
+        background-color: #9a9a9a;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .mainBar {
+    width: 100%;
+    margin: 0px 1em;
+  }
+  .testReports {
+    margin: 20px 0px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .testReportsList {
+    display: grid;
+    row-gap: 1em;
+    .testReport {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f2f5f7;
+      padding: 5px;
+      cursor: pointer;
+      color: #788896;
+      .timeZones {
+        font-size: 12px;
+        margin-top: 5px;
+      }
+      .passFailContainer{
+        display: flex;
+        column-gap: 40px;
+        margin-right: 10%;
+      }
+      .passCase {
+        color: red;
+        font-size: 13px;
+      }
+      .failCase {
+        color: green;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.reportDetails {
+  margin-top: 20px;
+  .details {
+    font-size: 11px;
+    background-color: #ced8e0;
+    width: 28%;
+    color: #788896;
+    padding: 12px;
+    border-radius: 2px;
+    .row1,
+    .row2,
+    .row3 {
+      display: flex;
+      margin-bottom: 5px;
+    }
+    .row1 {
+      column-gap: 40px;
+    }
+
+    .row3 {
+      column-gap: 10px;
+    }
+  }
+  .collapseHeader{
+    font-weight: 600;
+    color: #788896;
+  }
+  .report {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ced8e0;
+    margin-top: 10px;
+    padding: 10px;
+    color: #788896;
+  }
+  .failReport {
+    border-left: 6px solid red;
+  }
+  .successReport {
+    border-left: 6px solid green;
+  }
+  .errorReport {
+    border-left: 6px solid orange;
+  }
+}
